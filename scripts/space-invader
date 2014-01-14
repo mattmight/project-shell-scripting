@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# For all files in the current directory, replace
+# any spaces in file names with underscores.
+
+# If performing the rename would clash with an existing file,
+# do not rename the file and print a warning on stderr.
+
+
+echo TODO
+

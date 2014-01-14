@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Search all subdirectories of the current subdirectory.
+
+# If there are two (or more) files with identical file contents both named
+# .mp3, print the path to each of them.
+
+# To do this efficiently, you may want to use md5sum.
+
+
+echo TODO

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Apply rot13 encoding/decoding to STDIN.
+
+
+
+echo TODO
+

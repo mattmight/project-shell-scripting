@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This script should output all words it 
+# /usr/share/dict/words that have x as their second letter
+# and n as the second-to-last letter.
+
+
+echo TODO

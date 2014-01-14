@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# usage: validate <account-db> <username> <password>
+
+# This program will validate a user's login against
+# a salted, hashed password database.
+
+# An example account-db is provided in ../data/accounts.db
+
+# The format of an account database is:
+
+# <username>:<salt>:<salted-hashed-shasum-password>
+
+# Given a password PASS and a salt SALT, the command-line
+# utility shasum can compute its salted hash:
+
+# $ echo -n PASS:SALT | shasum
+
+# For instance, the password "foobar" with salt "500" yields:
+
+# $ echo -n foobar:500 | shasum 
+# 8a8cafed972dff26d81e4b9542334a303f3821e2  -
+
+# Thus, if user "matt" had the password "foobar", there would
+# be this line in the accounts database:
+
+# matt:500:8a8cafed972dff26d81e4b9542334a303f3821e2
+
+# Salted, hashed passwords are a way of storing a password so
+# that authentication is possible, but the password is unknown
+# even to the server itself.
+
+# If the login is valid, the script should print "valid" and
+# exit with status 0.
+
+# If the login is not valid, the script should print "invalid"
+# and exit with status 1.
+
+# WARNING: In practice, you need to use something stronger than shasum these
+# days, but some salting and hashing is better than none at all.
+
+
+# Usage:
+if [[ ! -n "$3" ]]
+then
+	echo "usage `basename $0` <account-db> <username> <password>"
+fi
+
+
+echo TODO

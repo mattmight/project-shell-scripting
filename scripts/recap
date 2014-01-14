@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Assume a list of names enters STDIN.
+
+# Print a list of properly recapitalized names on STDOUT.
+
+# Each input name will match the following regex:
+
+# [A-Za-z]+ (([A-Za-z])+\.?)? [A-Za-z]+( [A-Za-z]+)(-[A-Za-z]+)?
+
+# Here are the rules for capitalization in multiword last names:
+
+#  "del" or "de la" preceeding another name should remain lowercase.
+#  ex: daniel de la pava => Daniel de la Pava
+
+#  "von" preceeding another name should remain lowercase.
+#  ex: bill von ouster => Bill von Ouster
+
+#  "Van" preceeding another name should be capitalized.
+#  ex: david van horn => David Van Horn
+
+#  Hyphenated last names should have both name capitalized.
+#  ex: mike basen-mitchell => Mike Basen-Mitchell
+#  ex: simon peyton-jones => Simon Peyton-Jones
+
+#  For all other multiword last names, capitalize each word.
+
+
+echo TODO
+

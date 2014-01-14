@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Find the five largest subdirectories of the current directory:
+echo TODO
+

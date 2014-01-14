@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# If $1 and $2 are file names, output the lines they have in common.
+
+# You may not assume that these files have been sorted.
+
+# You may output each line only once, and the order does not matter.
+
+# Check usage:
+if [[ ! ( -n "$1" && -n "$2") ]]
+then
+	echo "usage: `basename $0` file1 file2"
+	exit 1
+fi
+
+# Print lines in common:
+echo TODO

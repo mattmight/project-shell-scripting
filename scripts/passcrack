@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# usage: passcrack <account-db> <password-db>
+
+# This program will attempt to crack passwords
+# in an improperly hashed account database.
+
+# The format of the account database is:
+
+#  <account-name>:<shasum-of-password>
+
+# An example of this database is ../data/crackable.db
+
+# For example, if "matt" has password "love",
+# then there will be an entry for:
+
+# matt:9f2feb0f1ef425b292f2f94bc8482494df430413
+
+# because:
+
+# $ echo -n love | shasum
+# 9f2feb0f1ef425b292f2f94bc8482494df430413
+
+# The format of a password database file is:
+
+#  <password>:<shasum-of-password>
+
+# This script should print the account-name and password
+# for any account whose password was in the password-db.
+
+# The output format is:
+
+# <account-name>:<password>
+
+# Usage:
+if [[ ! -n "$1" || ! -n "$2" ]]
+then
+	echo "usage: `basename $0` <accountdb> <passdb>"
+	exit 1
+fi
+
+

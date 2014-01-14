@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# usage: crackgen <word-file>
+
+# This program will generate the password databases
+# accepted by passcrack.
+
+# Its first argument is a word file (like /usr/share/dict/words).
+
+# It will output a password database with the format:
+
+# <word>:<shasum-of-word>
+
+# verify arg:
+if [[ ! -n "$1" ]]
+then
+	echo "usage: `basename $0` word_file"
+	exit 1
+fi
+
+# print word:shasum
+echo "TODO"
