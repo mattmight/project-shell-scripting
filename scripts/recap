@@ -6,7 +6,7 @@
 
 # Each input name will match the following regex:
 
-# [A-Za-z]+ (([A-Za-z])+\.?)? [A-Za-z]+( [A-Za-z]+)(-[A-Za-z]+)?
+# [A-Za-z]+( [A-Za-z]+\.?)? [A-Za-z]+( [A-Za-z]+)*(-[A-Za-z]+)?
 
 # Here are the rules for capitalization in multiword last names:
 
