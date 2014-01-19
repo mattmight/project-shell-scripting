@@ -12,8 +12,7 @@ test:
 	./scripts/recap < data/names.txt > results/recap.result
 	./scripts/oxbane > results/oxbane.result
 	./scripts/rot13 < data/magic-words.rot13 > results/rot13.result
-	mkdir results/space-invader.result
-	touch "results/space-invader.result/foo bar"
+	cp -v -r data/spaced-out results/space-invader.result	
 	{ cd results/space-invader.result ; $(pwd)/scripts/space-invader ; }
 	./scripts/intersect data/primes.set data/odds.set > results/intersect.result
 	./scripts/crackgen data/words > results/crackgen.result
