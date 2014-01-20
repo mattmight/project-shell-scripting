@@ -38,6 +38,19 @@ Recommended tools: `bash` or `zsh`, `md5sum`,
                    `sed`, `awk`, `du`. 
 
 
+Testing
+=======
+
+Running `make test` will run all of your scripts against the
+supplied test inputs in the `data` directory.  The results will
+be dumped into the `results` directory for inspection.
+
+Running `make compare` will `diff` the `results` directory with
+the supplied `expected-results` directory, which contains the
+output of the tools when run against the provided test inputs
+in the `data` directory.
+
+
 Requirements
 ------------
 
