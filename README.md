@@ -39,7 +39,7 @@ Recommended tools: `bash` or `zsh`, `md5sum`,
 
 
 Testing
-=======
+-------
 
 Running `make test` will run all of your scripts against the
 supplied test inputs in the `data` directory.  The results will
