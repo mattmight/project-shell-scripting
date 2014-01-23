@@ -36,6 +36,8 @@
 # If the login is not valid, the script should print "invalid"
 # and exit with status 1.
 
+# You can assume that there will only be one entry for a given username.
+
 # WARNING: In practice, you need to use something stronger than shasum these
 # days, but some salting and hashing is better than none at all.
 
