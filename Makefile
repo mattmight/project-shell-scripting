@@ -17,7 +17,8 @@ test:
 	./scripts/intersect data/primes.set data/odds.set > results/intersect.result
 	./scripts/crackgen data/words > results/crackgen.result
 	./scripts/passcrack data/crackable.db results/crackgen.result > results/passcrack.result
-	if ./scripts/validate data/accounts.db matt love; then echo 1 > results/validate.result; fi
+	if ./scripts/validate data/accounts.db matt love; then echo 0 > results/validate.result; fi
+	if ./scripts/validate data/accounts.db matt foobar; then echo 1 > results/validate.result; fi
 
 
 compare:
