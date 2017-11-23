@@ -1,5 +1,15 @@
 #!/bin/bash
 
 # Find the five largest subdirectories of the current directory:
-echo TODO
+OS=$(uname -s)
+if [[ $OS == 'Linux' ]]; then
+    du -hs * | sort -h | tail -5
+elif [[ $OS == 'Darwin' ]]; then
+    brew list | grep coreutils
+if [[ $? -eq 0 ]]; then
+    du -hs * | gsort -h | tail -5
+else
+    echo "Please run brew install coreutils and run again"
+fi
+fi
 
