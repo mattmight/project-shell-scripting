@@ -7,7 +7,7 @@ test:
 	@echo * Running tests.
 	rm -rf results
 	mkdir results
-	{ cd /etc ; $(pwd)/scripts/gordo ; } > results/gordo.result
+	{ cd $(pwd)/data/dummy-dir ; $(pwd)/scripts/gordo ; } > results/gordo.result
 	{ cd data/mp3-forest ; $(pwd)/scripts/mp3dups ; } > results/mp3dups.result
 	./scripts/recap < data/names.txt > results/recap.result
 	./scripts/oxbane > results/oxbane.result
