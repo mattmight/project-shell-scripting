@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# This script should output all words it 
-# /usr/share/dict/words that have x as their second letter
+# This script should output all words that have x as their second letter
 # and n as the second-to-last letter.
-
+# dictionary words are in the file ../data/british-english-dict
 
 echo TODO
